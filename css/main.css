@@ -1,0 +1,122 @@
+@import "./reset.css";
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 45px;
+
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px 50;
+    background: linear-gradient(270.55deg, rgba(31, 28, 180, 0.62) 14.53%, rgba(95, 28, 180, 0.62) 38.71%), linear-gradient(90deg, rgba(95, 28, 180, 0.62) 0%, #000000 50%), #D9D9D9;
+}
+
+.title {
+    margin-bottom: 13px;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 10px 45px;
+    font-family: 'Itim', cursive;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.btn {
+    font-family: 'Itim', cursive;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    color: #FFFFFF;
+    background: #7969A5;
+    border-radius: 0px 6px 6px 0px;
+
+    transition: background-color 0.2s ease-in;
+}
+
+.btn:hover {
+    background: #412e73;
+}
+
+/*Card*/
+
+.card {
+    width: 370px;
+    height: 190px;
+    left: calc(50% - 370px/2);
+    top: calc(50% - 190px/2 + 60.5px);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(95, 28, 180, 0.62);
+}
+
+.card-city {
+    width: 161px;
+    height: 42px;
+    font-family: 'Itim';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.card-weather {
+    width: 111px;
+    height: 81px;
+    font-family: 'Itim';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #000000;
+}
+
+.card-value {}
+
+.card-img {
+    width: 122px;
+    height: 103px;
+}
+
+.card-descr {
+    width: 45px;
+    height: 36px;
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
