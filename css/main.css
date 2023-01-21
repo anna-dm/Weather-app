@@ -1,122 +1,178 @@
 @import "./reset.css";
 
+html,
+body {
+    min-height: 100vh;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 45px;
+    row-gap: 50px;
+
 
 }
-
 
 .header {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 15px 50;
-    background: linear-gradient(270.55deg, rgba(31, 28, 180, 0.62) 14.53%, rgba(95, 28, 180, 0.62) 38.71%), linear-gradient(90deg, rgba(95, 28, 180, 0.62) 0%, #000000 50%), #D9D9D9;
+
+    padding: 40px 15px 50px;
+    background: linear-gradient(89.93deg, #040A21 0.18%, #8F51A5 50.46%, #B26ACB 99.87%), #232323;
+
 }
 
 .title {
-    margin-bottom: 13px;
-    text-align: center;
+    margin-bottom: 20px;
     font-family: 'Italiana', serif;
     font-weight: 400;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 1.18;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .form {
     display: flex;
     justify-content: space-between;
-    max-width: 350px;
-    background: #FFFFFF;
-    border-radius: 10px;
-    height: 40px;
+    width: 460px;
+    height: 54px;
+    background: #ffffff;
+    border-radius: 6px;
 }
 
 .input {
     flex-grow: 1;
-    padding: 10px 45px;
+    padding: 15px;
     font-family: 'Itim', cursive;
     font-weight: 400;
     font-size: 15px;
-    line-height: 18px;
-    text-align: center;
+    line-height: 1;
     color: #000000;
 }
 
 .btn {
+    width: 145px;
+    height: 54px;
+    background: #632F8C;
+    border-radius: 6px;
     font-family: 'Itim', cursive;
     font-weight: 400;
     font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    width: 90px;
-    height: 40px;
-    color: #FFFFFF;
-    background: #7969A5;
-    border-radius: 0px 6px 6px 0px;
+    line-height: 1;
+    color: #fff;
 
     transition: background-color 0.2s ease-in;
 }
 
 .btn:hover {
-    background: #412e73;
+    background: #2c0347;
 }
 
-/*Card*/
+/* Card */
 
 .card {
-    width: 370px;
-    height: 190px;
-    left: calc(50% - 370px/2);
-    top: calc(50% - 190px/2 + 60.5px);
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(95, 28, 180, 0.62);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    padding: 30px;
+    width: 360px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 5px 20px rgba(108, 10, 111, 0.25);
+}
+
+.card::before {
+    content: '';
+
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    z-index: -1;
+
+    width: calc(100% - 20px);
+    height: 100%;
+
+    background: #ffffff;
+    box-shadow: 0px 5px 20px rgba(72, 2, 57, 0.25);
+    border-radius: 6px;
 }
 
 .card-city {
-    width: 161px;
-    height: 42px;
-    font-family: 'Itim';
+    font-family: 'Itim', cursive;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
+    font-size: 28px;
 
+    line-height: 33px;
     color: #000000;
+}
+
+.card-city span {
+    display: inline-block;
+    vertical-align: text-top;
+
+    padding: 3px 5px;
+    background: #632F8C;
+    border-radius: 6px;
+
+    color: #fff;
+    font-family: 'Itim', cursive;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
 }
 
 .card-weather {
-    width: 111px;
-    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.card-value {
     font-family: 'Itim';
     font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
-    text-align: center;
+    font-size: 92px;
+    line-height: 1;
     color: #000000;
 }
 
-.card-value {}
-
-.card-img {
-    width: 122px;
-    height: 103px;
+.card-value sup {
+    font-size: 50%;
 }
+
+.card-img {}
 
 .card-descr {
-    width: 45px;
-    height: 36px;
     font-family: 'Itim';
-    font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 8px 15px;
+    background: #B287BC;
+
+    font-family: 'Itim';
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
     text-align: center;
     color: #000000;
+}
+
+.footer a {
+    color: #B287BC;
+    text-decoration: none;
 }
